@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="1314.0" style="-fx-background-color: #f7817b;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhirsmt1.FXMLTengahController">
+   <children>
+      <AnchorPane layoutY="729.0" prefHeight="90.0" prefWidth="1314.0" style="-fx-background-color: #6cb4d1;">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="79.0" layoutX="1204.0" layoutY="14.0" onMouseClicked="#nota">
+               <image>
+                  <Image url="@../pictures/PANAHHH.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="buttonnota" layoutX="1097.0" layoutY="35.0" onAction="#gotonota" style="-fx-background-color: ;" text="GO TO NOTA" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-7.0" layoutY="-3.0" prefHeight="90.0" prefWidth="1321.0" style="-fx-background-color: #6cb4d1;">
+         <children>
+            <Label layoutX="532.0" layoutY="9.0" text="Yuk Sedekah !!" textFill="WHITE">
+               <font>
+                  <Font name="Sexsmith-Regular" size="61.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="53.0" layoutX="461.0" layoutY="16.0">
+               <image>
+                  <Image url="@../pictures/kupukupu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="68.0" layoutX="383.0" layoutY="12.0">
+               <image>
+                  <Image url="@../pictures/mutiara.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="53.0" layoutX="814.0" layoutY="16.0">
+               <image>
+                  <Image url="@../pictures/kupukupu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="68.0" layoutX="886.0" layoutY="12.0">
+               <image>
+                  <Image url="@../pictures/mutiara.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="72.0" layoutY="122.0" prefHeight="139.0" prefWidth="523.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="138.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="87.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nama Pembeli    :   " textFill="WHITE">
+               <font>
+                  <Font name="Sexsmith-Regular" size="23.0" />
+               </font>
+            </Label>
+            <Label text="Alamat Pembeli  :" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Sexsmith-Regular" size="23.0" />
+               </font>
+            </Label>
+            <Label text="kasir                 :" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Sexsmith-Regular" size="23.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="namapembeli" maxWidth="205.0" minWidth="205.0" prefHeight="37.0" prefWidth="205.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Sexsmith-Regular" size="27.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="alamatpembeli" maxWidth="205.0" minWidth="205.0" prefHeight="37.0" prefWidth="205.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Sexsmith-Regular" size="27.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="kasir" editable="false" maxWidth="205.0" minWidth="205.0" prefHeight="37.0" prefWidth="205.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Sexsmith-Regular" size="27.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="165.0" fitWidth="200.0" layoutX="72.0" layoutY="326.0" onMouseClicked="#masker">
+         <image>
+            <Image url="@../pictures/masker.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="200.0" layoutX="399.0" layoutY="326.0" onMouseClicked="#sepatu">
+         <image>
+            <Image url="@../pictures/sepatu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="200.0" layoutX="729.0" layoutY="326.0" onMouseClicked="#tas">
+         <image>
+            <Image url="@../pictures/tas1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="200.0" layoutX="1044.0" layoutY="326.0" onMouseClicked="#tas1">
+         <image>
+            <Image url="@../pictures/tas2.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="hargamasker" editable="false" layoutX="167.0" layoutY="502.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="85.0" layoutY="508.0" text="Harga          :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="552.0" text="Jumlah beli  :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="628.0" text="Total           : " textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="buttonmasker" layoutX="143.0" layoutY="589.0" onAction="#belimasker" style="-fx-background-color: #4b7687;" text="Beli" textFill="#fffbfb">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="jumlahmasker" layoutX="167.0" layoutY="540.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="totalmasker" editable="false" layoutX="167.0" layoutY="619.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0" text="0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="hargasepatu" editable="false" layoutX="494.0" layoutY="504.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="412.0" layoutY="510.0" text="Harga          :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="554.0" text="Jumlah beli  :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="630.0" text="Total           : " textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="buttonsepatu" layoutX="470.0" layoutY="591.0" onAction="#belisepatu" style="-fx-background-color: #4b7687;" text="Beli" textFill="#fffbfb">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="jumlahsepatu" layoutX="494.0" layoutY="542.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="totalsepatu" editable="false" layoutX="494.0" layoutY="621.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0" text="0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="hargatas" editable="false" layoutX="818.0" layoutY="506.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="736.0" layoutY="512.0" text="Harga          :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="736.0" layoutY="556.0" text="Jumlah beli  :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="738.0" layoutY="632.0" text="Total           : " textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="buttontas" layoutX="794.0" layoutY="593.0" onAction="#belitas" style="-fx-background-color: #4b7687;" text="Beli" textFill="#fffbfb">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="jumlahtas" layoutX="818.0" layoutY="544.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="totaltas" editable="false" layoutX="818.0" layoutY="623.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0" text="0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="hargatas1" editable="false" layoutX="1126.0" layoutY="516.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="1044.0" layoutY="522.0" text="Harga          :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1044.0" layoutY="566.0" text="Jumlah beli  :" textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1046.0" layoutY="642.0" text="Total           : " textFill="WHITE">
+         <font>
+            <Font name="Sexsmith-Regular" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="buttontas1" layoutX="1102.0" layoutY="603.0" onAction="#belitas1" style="-fx-background-color: #4b7687;" text="Beli" textFill="#fffbfb">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="jumlahtas1" layoutX="1126.0" layoutY="554.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="totaltas1" editable="false" layoutX="1126.0" layoutY="633.0" maxWidth="105.0" minWidth="105.0" prefHeight="37.0" prefWidth="105.0" text="0">
+         <font>
+            <Font name="Sexsmith-Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <AnchorPane layoutX="638.0" layoutY="147.0" opacity="0.64" prefHeight="114.0" prefWidth="512.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="79.0" layoutY="18.0" text="&quot;Setengah dari total harga&quot;" textFill="#b23131">
+               <font>
+                  <Font name="Sexsmith-Regular" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="50.0" text="&quot;akan di donasikan ke Yayasan Pelindung Hati&quot;" textFill="#b23131">
+               <font>
+                  <Font name="Sexsmith-Regular" size="23.0" />
+               </font>
+            </Label>
+            <Separator layoutX="172.0" layoutY="80.0" prefHeight="4.0" prefWidth="163.0" />
+            <ImageView fitHeight="81.0" fitWidth="154.0" layoutX="339.0" layoutY="19.0">
+               <image>
+                  <Image url="@../pictures/members-42919_960_720.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="124.0" layoutY="297.0" text="-- Tekan gambar --" textFill="#124572">
+         <font>
+            <Font name="Sexsmith-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="297.0" text="-- Tekan gambar --" textFill="#124572">
+         <font>
+            <Font name="Sexsmith-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="781.0" layoutY="297.0" text="-- Tekan gambar --" textFill="#124572">
+         <font>
+            <Font name="Sexsmith-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1096.0" layoutY="297.0" text="-- Tekan gambar --" textFill="#124572">
+         <font>
+            <Font name="Sexsmith-Regular" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
