@@ -20,4 +20,4 @@ berikut tampilan nota beserta validasinya.
 
 apabila belum puas atau ingin revisi maka bisa tekan tombol back (menuju ke halaman index).
 
-![alt text](index1.PNG)
+![alt text](indexx.PNG)
